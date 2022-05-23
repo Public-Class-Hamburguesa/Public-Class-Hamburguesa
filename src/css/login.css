@@ -1,0 +1,119 @@
+html{
+    background-color: yellow;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*MODIFICAMOS EL HEADER LOS H1 A NUESTRO GUSTO*/
+header{
+    text-align: center;
+    position: relative;
+}
+img#cabecera{
+    left: 550px;
+}
+h2{
+    color: white;
+    background-color: black;
+    width: 1000px;
+    position: relative;
+    left: 300px;
+}
+/*LOS ENLACES CON EL ID CAMBIA, SE MOSTRARÁN CON EL FONDO AZUL*/
+a.cambia {
+    background-color: powderblue;
+    transition: background-color 1s; /*AQUI PREPARO AL ENLACE PARA RECIBIR UNA ORDEN DE TRANSICION QUE LE DICTARÉ MAS ADELANTE*/
+}
+/*AQUI PONGO UNA REGLA QUE, EN CONJUNCION CON LA ANTERIOR, DICE QUE CUANDO PASE EL RATON POR ENCIMA, CAMBIE EL COLOR DE FONDO A DORADO*/
+a:hover {
+    background-color: gold;
+}
+/*EMPEZAMOS A COLOCAR LOS ELEMENTOS DE LA BARRA DEL DESPLEGABLE*/
+/*USAMOS ETIQUETA COMPUESTA PARA IR A LA UNORDERED LIST DENTRO DE LA ID MENU Y LE PONEMOS UNAS CARACTERISTICAS BASICAS*/
+nav#menu ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    left: 400px;
+    z-index: 1;
+}
+/*AQUI NOS REFERIMOS A TODOS LOS ELEMENTOS LI DE LA UNORDERED LIST EN ESTE CASO QUIERO QUE SEAN CON FONDO NEGRO*/
+nav#menu ul li{
+    background-color: black;
+}
+/*AHORA ME REFIERO A LOS ENLACES DEL MENU PRINCIPAL. ASI SE NOS QUEDARIAN CON LA LETRA DE COLOR BLANCO, SEPARADOS Y SE MOSTRARAN COMO UN BLOQUE*/
+nav#menu ul a{
+    display: block;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+/*CON ESTOS ELEMENTOS SE NOS QUEDA ORIENTADO HORIZONTALMENTE EN LA POSICION QUE QUEREMOS*/
+nav#menu ul li{
+    position: relative;
+    float: left;
+    margin: 0%;
+    padding: 0%;
+}
+/*AHORA VAMOS A ESCONDER LOS SUBMENUS DENTRO DEL MENU PRINCIPAL*/
+nav#menu ul ul {
+    display: none;
+    position: absolute;
+    left: 0%;
+    padding: 0%;
+}
+/*AHORA NOS REFERIMOS A LOS ITEMS DE LOS DESPLEGABLES*/
+nav#menu ul ul li{
+    float: none;
+    width: 150px;
+}
+/*ENLACES DE LOS ITEMS DEL MENU DESPLEGABLE*/
+nav#menu ul ul a{
+    line-height: 120%;
+    padding: 10px;
+}
+/*AHORA VAMOS A HACER QUE LOS SUBMENUS SE MUESTREN AL PASAR POR EL*/
+nav#menu ul li:hover > ul {
+    display: block;
+}
+/*A PARTIR DE AQUI VAMOS A PONERLE COLORES DISTINTOS A CADA DESPLEGABLE Y EL COLOR HACIA EL QUE TRANSICIONA*/
+a.gray {
+    background-color: black;
+    transition: background-color 1s;
+}
+a.gray:hover {
+    background-color:gray;
+}
+a.red {
+    background-color: black;
+    transition: background-color 1s;
+}
+a.red:hover {
+    background-color: red;
+}
+a.blue {
+    background-color: black;
+    transition: background-color 1s;
+}
+a.blue:hover {
+    background-color: blue;
+}
+a.gold {
+    background-color: black;
+    transition: background-color 1s;
+}
+a.gold:hover {
+    background-color: gold;
+}
+/*AQUI ACABA EL INDICE DESPLEGABLE*/
+
+div#registro{
+    position: absolute;
+    top: 50%;
+    flex-direction:column;
+}
