@@ -1,25 +1,45 @@
 html{
-    background-color: yellow;
+    background-color: #ffbb40;
 }
 
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+}
 
 /*MODIFICAMOS EL HEADER LOS H1 A NUESTRO GUSTO*/
+
 header{
-    text-align: center;
-    position: relative;
-}
-img#cabecera{
-    left: 550px;
-}
-h2{
+    display: block;
+    position: absolute;
     color: white;
-    background-color: black;
-    width: 1000px;
+    width: 100%;
+    top: 0%;
+    background-color: rgb(32, 32, 31);
+}
+
+h1{
+    text-align: center;
+    top: 0%;
+}
+
+nav#menu{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+img#logo{
+    float: left;
+    width: 12%;
+    height: 12%;
+    top: 0px;
     position: relative;
-    left: 300px;
+    left: 20%;
 }
 /*LOS ENLACES CON EL ID CAMBIA, SE MOSTRARÁN CON EL FONDO AZUL*/
 a.cambia {
@@ -87,33 +107,54 @@ a.gray {
     transition: background-color 1s;
 }
 a.gray:hover {
-    background-color:gray;
+    background-color: #cf3401;
 }
 a.red {
     background-color: black;
     transition: background-color 1s;
 }
 a.red:hover {
-    background-color: red;
+    background-color: #ff880c;
 }
 a.blue {
     background-color: black;
     transition: background-color 1s;
 }
 a.blue:hover {
-    background-color: blue;
+    background-color: #f2854b;
 }
 a.gold {
     background-color: black;
     transition: background-color 1s;
 }
 a.gold:hover {
-    background-color: gold;
+    background-color: #526f12;
 }
 /*AQUI ACABA EL INDICE DESPLEGABLE*/
 
-div#registro{
+div#login{
+    background-color: gray;
+    border: 10px;
+    border-color: gray;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    text-align: justify;
+    left: 45%;
     top: 50%;
-    flex-direction:column;
+    border-radius: 10%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    display: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 3%;
 }
