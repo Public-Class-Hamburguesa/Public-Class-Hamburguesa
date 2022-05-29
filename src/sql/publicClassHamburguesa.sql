@@ -14,6 +14,9 @@ CREATE TABLE empleado(
 
 CREATE TABLE cliente(
 	id VARCHAR(10),
+    usuario VARCHAR(256),
+    contraseña VARCHAR(256),
+    email VARCHAR(256),
     edad INT,
     PRIMARY KEY (id)
 );
@@ -45,15 +48,4 @@ CREATE TABLE lineaComanda(
     PRIMARY KEY(id, idComanda, idProducto),
     FOREIGN KEY(idComanda) REFERENCES comanda(id),
     FOREIGN KEY(idProducto) REFERENCES producto(id)
-);
-
-CREATE TABLE usuarios(
-nombre VARCHAR(256),
-apellidos VARCHAR(256),
-email VARCHAR(256),
-usuario VARCHAR(256)
-);
-
-CREATE TABLE passwords(
-contraseña VARCHAR(256)
 );
