@@ -7,6 +7,6 @@ function registrar(){
         }
     }
 
-    http.open("POST","http://localhost:8080/DAWregister/registrar", true);
+    http.open("POST","http://localhost:8080/AppRestaurantes/registrar", true);
     http.send("edad="+document.getElementById("edad").value+"email="+document.getElementById("email").value+"&&usuario="+document.getElementById("usuario").value+"&&contraseña="+document.getElementById("contraseña").value);
 }
