@@ -11,8 +11,8 @@ public class Cliente extends Persona{
 		super();
 	}
 	
-	public Cliente(String id, int edad, String usuario, String email, String contraseña) {
-		super(id, edad);
+	public Cliente(int edad, String usuario, String email, String contraseña) {
+		super(edad);
 		this.setUsuario(usuario);
 		this.setEmail(email);
 		this.setContraseña(contraseña);
@@ -26,15 +26,17 @@ public class Cliente extends Persona{
 	@SuppressWarnings("finally")
 	public boolean registrarCliente() {
 		boolean  resultat = true;
+		Persona persona = new Persona();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://localhost:3306/DAWregistrar";
-			Connection con = DriverManager.getConnection(url, "root", ""); //(url, usuario, contraseña)
+			String url = "jdbc:mysql://localhost:3306/publicclasshamburguesa";
+			Connection con = DriverManager.getConnection(url, "root", "Namiki1223"); //(url, usuario, contraseña)
 			Statement st = con.createStatement();
-			String query = "INSERT INTO cliente(id,edad,email,usuario,contraseña) VALUES ('"+super.getId()+"','"+super.getEdad()+"','"+this.getEmail()+"','"+this.getUsuario()+"','"+this.getContraseña()+"')";
+			String query = "INSERT INTO cliente(id,edad,email,usuario,contraseña) VALUES ('1','"+persona.getEdad()+"','"+this.getEmail()+"','"+this.getUsuario()+"','"+this.getContraseña()+"')";
 			st.executeUpdate(query);  //executeQuery para cuando hacemos un select, executeUpdate para un Insert
 		} catch (Exception e) {
 			resultat = false;
+			System.out.println(e.getMessage());
 		} finally {
 			return resultat;
 		}
