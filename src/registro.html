@@ -7,6 +7,7 @@
     <title>main</title>
     <!--Establecemos el enlace para el css-->
     <link rel="stylesheet" href="./css/registro.css">
+    <script src="./js/registro.js"></script>
 </head>
 <body>
     <header><h1>PUBLIC CLASS HAMBUGUESA</h1></header>
@@ -45,8 +46,8 @@
         </ul>
     </nav>
 
-    <div id="registro">
-        <form action="" onsubmit="">
+     <div id="registro">
+        <!-- <form> -->
             <label for="nombre">Nombre: </label>
             <input type="text" id="nombre">
             <label for="apellidos">Apellidos: </label>
@@ -54,15 +55,16 @@
             <label for="edad">Edad: </label>
             <input type="text" id="edad">
             <label for="email">e-mail: </label>
-            <input type="email" name="email" id="email">
+            <input type="text" name="email" id="email">
             <label for="usuario">Usuario: </label>
-            <input type="text" name="usuario">
+            <input type="text" name="usuario" id="usuario">
             <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña">
-            <input type="button" value="Enviar" onclick="">
+            <input type="text" name="contraseña" id="contrasenya">
+            <button type="button" onclick="registrar()">Enviar</button>
             <input type="reset" value="Reset">
-        </form>
+        <!-- </form> -->
     </div>
+    <div id="resultado"></div>
     
 </body>
 </html>
