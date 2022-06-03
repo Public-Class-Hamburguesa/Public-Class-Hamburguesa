@@ -1,0 +1,187 @@
+html{
+    background-color: #ffbb40;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*MODIFICAMOS EL HEADER LOS H1 A NUESTRO GUSTO*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header h1{
+    font-family:cursive;
+}
+img#logo{
+    width: 200px;
+    height: 200px;
+    left: 550px;
+}
+
+/*LOS ENLACES CON EL ID CAMBIA, SE MOSTRARÁN CON EL FONDO AZUL*/
+a.cambia {
+    background-color: powderblue;
+    transition: background-color 1s; /*AQUI PREPARO AL ENLACE PARA RECIBIR UNA ORDEN DE TRANSICION QUE LE DICTARÉ MAS ADELANTE*/
+}
+/*AQUI PONGO UNA REGLA QUE, EN CONJUNCION CON LA ANTERIOR, DICE QUE CUANDO PASE EL RATON POR ENCIMA, CAMBIE EL COLOR DE FONDO A DORADO*/
+a:hover {
+    background-color: gold;
+}
+nav#menu{
+    position: relative;
+    top: 10%;
+    left: 0px;
+}
+/*EMPEZAMOS A COLOCAR LOS ELEMENTOS DE LA BARRA DEL DESPLEGABLE*/
+/*USAMOS ETIQUETA COMPUESTA PARA IR A LA UNORDERED LIST DENTRO DE LA ID MENU Y LE PONEMOS UNAS CARACTERISTICAS BASICAS*/
+nav#menu ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    z-index: 1;
+}
+/*AQUI NOS REFERIMOS A TODOS LOS ELEMENTOS LI DE LA UNORDERED LIST EN ESTE CASO QUIERO QUE SEAN CON FONDO NEGRO*/
+nav#menu ul li{
+    background-color: black;
+}
+/*AHORA ME REFIERO A LOS ENLACES DEL MENU PRINCIPAL. ASI SE NOS QUEDARIAN CON LA LETRA DE COLOR BLANCO, SEPARADOS Y SE MOSTRARAN COMO UN BLOQUE*/
+nav#menu ul a{
+    display: block;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+/*CON ESTOS ELEMENTOS SE NOS QUEDA ORIENTADO HORIZONTALMENTE EN LA POSICION QUE QUEREMOS*/
+nav#menu ul li{
+    position: relative;
+    float: left;
+    margin: 0%;
+    padding: 0%;
+}
+/*AHORA VAMOS A ESCONDER LOS SUBMENUS DENTRO DEL MENU PRINCIPAL*/
+nav#menu ul ul {
+    display: none;
+    position: absolute;
+    left: 0%;
+    padding: 0%;
+}
+/*AHORA NOS REFERIMOS A LOS ITEMS DE LOS DESPLEGABLES*/
+nav#menu ul ul li{
+    float: none;
+    width: 150px;
+}
+/*ENLACES DE LOS ITEMS DEL MENU DESPLEGABLE*/
+nav#menu ul ul a{
+    line-height: 120%;
+    padding: 10px;
+}
+/*AHORA VAMOS A HACER QUE LOS SUBMENUS SE MUESTREN AL PASAR POR EL*/
+nav#menu ul li:hover > ul {
+    display: block;
+}
+/*A PARTIR DE AQUI VAMOS A PONERLE COLORES DISTINTOS A CADA DESPLEGABLE Y EL COLOR HACIA EL QUE TRANSICIONA*/
+a.gray {
+    background-color: black;
+    transition: background-color 1s;
+}
+a.gray:hover {
+    background-color:#cf3401;
+}
+a.red {
+    background-color: black;
+    transition: background-color 1s;
+}
+a.red:hover {
+    background-color: #ff880c;
+}
+a.blue {
+    background-color: black;
+    transition: background-color 1s;
+}
+a.blue:hover {
+    background-color: #fef190;
+}
+a.gold {
+    background-color: black;
+    transition: background-color 1s;
+}
+a.gold:hover {
+    background-color: #526f12;
+}
+/*AQUI ACABA EL INDICE DESPLEGABLE*/
+
+main{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+}
+
+div#casa{
+    border: 2mm;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20%;
+    background-color: #cf3401;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+}
+div#toni{
+    border: 2mm;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20%;
+    background-color: #ff880c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+}
+div#jorge{
+    border: 2mm;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20%;
+    background-color: #fef190;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+}
+div#dani{
+    border: 2mm;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20%;
+    background-color: #526f12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    position:fixed;
+    width: 100%;
+    bottom: 0%;
+    display: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 3%;
+}
