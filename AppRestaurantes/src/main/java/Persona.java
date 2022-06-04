@@ -1,67 +1,46 @@
-package PublicClassHamburgerPrueba;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Persona {
 	//Atributos
-		private String id;
 		private int edad;
 		
 		protected Scanner teclat = new Scanner(System.in);
 		
 		//Constructores
-		public Persona (String id, int edad) {
-			this.setId(id);
+		public Persona (int edad) {
 			this.setEdad(edad);
 		}
 		
 		public Persona() {
-			this(null, 0);
+			this(0);
 		}
 
 		public Persona(Persona persona) {
-			this.id = persona.getId();
 			this.edad = persona.getEdad();
 		}
 
 		//Getters y Setters
-		public String getId() {
-			return id;
-		}
-
-		public void setId(String id) {
-			this.id = id;
-		}
-
 		public int getEdad() {
 			return edad;
 		}
 
 		public void setEdad(int edad) {
 			Scanner teclat = new Scanner(System.in);
-			boolean resultat=false;
-			while(!resultat) {
-				if(edad < 0) {
-					System.out.println("No puede haber edades menores que 0");
-				} else if(edad >= 18){
+			/*boolean resultat=false;
+				if(edad >= 18) {
 					resultat=true;
 					this.edad = edad;
 				}else {
 					System.out.println("Eres menor de edad, no puedes pedir alcohol");
-					
-				}
-			}
+				}*/
 			
 		}
 		
-		//Otros métodos
+		//Otros mÃ©todos
 		public static void anyadirPersona(ArrayList<Persona> listaPersonas) {
 			Scanner teclat = new Scanner (System.in);
 			Persona persona = new Persona();
-			
-			System.out.println("Tu id es: ");
-			persona.setId(teclat.nextLine());
 			
 			System.out.println("Introduce tu edad: ");
 			persona.setEdad(teclat.nextInt());
@@ -70,7 +49,7 @@ public class Persona {
 			listaPersonas.add(persona);
 		}
 		
-		public static void eliminarPersona(ArrayList<Persona> listaPersonas) {
+		/*public static void eliminarPersona(ArrayList<Persona> listaPersonas) {
 //			Scanner teclat = new Scanner(System.in);
 //			String nif = new String();
 //			System.out.println("Introduce el NIF de la persona que quieres eliminar: ");
@@ -83,9 +62,9 @@ public class Persona {
 				System.out.println("Persona no encontrada");
 			 }
 			
-		}
+		}*/
 		
-		public static int buscarPersonaId (ArrayList<Persona> listaPersonas) {
+		/*public static int buscarPersonaId (ArrayList<Persona> listaPersonas) {
 			Scanner teclat = new Scanner(System.in);
 			String id = new String();
 			System.out.println("Introduce el Id a buscar: ");
@@ -103,7 +82,7 @@ public class Persona {
 				i = i + 1;
 			}
 			return posicion;
-		}
+		}*/
 		
 		public void solicitarDatos() {
 			Scanner teclat = new Scanner(System.in);
@@ -118,7 +97,6 @@ public class Persona {
 		}
 		
 		public void mostrarDatos() {
-			System.out.println(this.getId());
 			System.out.println(this.getEdad());
 		}
 }
