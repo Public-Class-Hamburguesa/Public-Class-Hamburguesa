@@ -11,10 +11,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background-color: #ff880c;
+    border-color: black;
+    border-style: solid;
+    border-width: 3mm;
 }
 header h1{
-    font-family:cursive;
+    font-family: cursive;
 }
 img#logo{
     width: 200px;

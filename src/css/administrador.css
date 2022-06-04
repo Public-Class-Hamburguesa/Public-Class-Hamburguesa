@@ -6,18 +6,21 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    color: white;
-    background-color: black;
     display: flex;
-    flex: content;
     justify-content: space-between;
-    border: 0.5cm;
+    align-items: center;
+    background-color: #ff880c;
     border-color: black;
     border-style: solid;
+    border-width: 3mm;
+}
+header h1{
+    font-family: cursive;
 }
 img#logo{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    left: 550px;
 }
 main{
     background-color: gray;

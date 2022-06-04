@@ -5,16 +5,25 @@ html{
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+}
 
 /*MODIFICAMOS EL HEADER LOS H1 A NUESTRO GUSTO*/
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background-color: #ff880c;
+    border-color: black;
+    border-style: solid;
+    border-width: 3mm;
 }
 header h1{
-    font-family:cursive;
+    font-family: cursive;
 }
 img#logo{
     width: 200px;
@@ -22,6 +31,12 @@ img#logo{
     left: 550px;
 }
 
+nav#menu{
+    position: relative;
+    top: 10%;
+    left: 0px;
+    list-style: none;
+}
 /*LOS ENLACES CON EL ID CAMBIA, SE MOSTRARÁN CON EL FONDO AZUL*/
 a.cambia {
     background-color: powderblue;
@@ -31,19 +46,12 @@ a.cambia {
 a:hover {
     background-color: gold;
 }
-nav#menu{
-    position: relative;
-    top: 10%;
-    left: 0px;
-}
 /*EMPEZAMOS A COLOCAR LOS ELEMENTOS DE LA BARRA DEL DESPLEGABLE*/
 /*USAMOS ETIQUETA COMPUESTA PARA IR A LA UNORDERED LIST DENTRO DE LA ID MENU Y LE PONEMOS UNAS CARACTERISTICAS BASICAS*/
 nav#menu ul{
     list-style: none;
     margin: 0%;
     padding: 0%;
-    position: relative;
-    z-index: 1;
 }
 /*AQUI NOS REFERIMOS A TODOS LOS ELEMENTOS LI DE LA UNORDERED LIST EN ESTE CASO QUIERO QUE SEAN CON FONDO NEGRO*/
 nav#menu ul li{
@@ -92,7 +100,7 @@ a.gray {
     transition: background-color 1s;
 }
 a.gray:hover {
-    background-color:#cf3401;
+    background-color: #cf3401;
 }
 a.red {
     background-color: black;
@@ -106,7 +114,7 @@ a.blue {
     transition: background-color 1s;
 }
 a.blue:hover {
-    background-color: #fef190;
+    background-color: #f2854b;
 }
 a.gold {
     background-color: black;
@@ -118,66 +126,19 @@ a.gold:hover {
 /*AQUI ACABA EL INDICE DESPLEGABLE*/
 
 main{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 100px;
+    text-align: center;
 }
 
-div#casa{
-    border: 2mm;
-    border-style: solid;
-    border-color: black;
-    border-radius: 20%;
-    background-color: #cf3401;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
-    height: 300px;
-}
-div#toni{
-    border: 2mm;
-    border-style: solid;
-    border-color: black;
-    border-radius: 20%;
-    background-color: #ff880c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
-    height: 300px;
-}
-div#jorge{
-    border: 2mm;
-    border-style: solid;
-    border-color: black;
-    border-radius: 20%;
-    background-color: #fef190;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
-    height: 300px;
-}
-div#dani{
-    border: 2mm;
-    border-style: solid;
-    border-color: black;
-    border-radius: 20%;
-    background-color: #526f12;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
-    height: 300px;
+main h2{
+    font-family: fantasy;
+    font-size:xx-large;
 }
 
 footer{
     background-color: black;
     color: white;
     display: flex;
-    position:fixed;
+    position: fixed;
     width: 100%;
     bottom: 0%;
     display: relative;
