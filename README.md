@@ -1,3 +1,43 @@
+# Public Class Hamburguesa
+
+Hemos diseñado una aplicación web cuyo fin es satisfacer la necesidad del local de comida rápida Public Hamburguesa, ofreciendo simpleza y eficiencia a sus clientes a la hora de realizar pedidos.
+
+### Requisitos funcionales
+
+1. CLIENTE_RF01: El usuario debe poder iniciar un pedido
+
+2. CLIENTE_RF02: El usuario debe poder añadir uno o varios productos a su pedido.
+
+3. CLIENTE_RF03: El usuario debe poder cancelar su pedido siempre y cuando no lo haya finalizado.
+
+4. CLIENTE_RF04: El usuario debe poder confirmar y finalizar su pedido.
+
+5. EMPLEADO_RF01: El empleado debe poder visualizar los pedidos en cola.
+
+6. EMPLEADO_RF02: El empleado debe poder marcar un pedido como “listo”.
+
+### Requisitos del sistemas
+
++ El acceso informativo a la aplicación debe de estar disponible las 24 horas.
++ Los pedidos solo deberán poder ser realizados en horario laboral.
++ La implementación debe realizarse desde un dispositivo con conexión a internet o desde los paneles disponibles en el establecimiento.
+
+### Modelo entidad relación de la BDD
+
+<img src="https://i.gyazo.com/778ffe20b613c9a244172477e70bba2c.png">
+
+### Diagrama de diseño general
+
+<img src="https://i.gyazo.com/72611f4dc9e700211266f11ac5925d2b.png">
+
+### Diagrama de actividades y flujo
+
+Diagrama de actividades y diagrama de flujo en los que se refleja el comportamiento de la aplicación a la hora de iniciar un pedido de un cliente
+
+<img src="https://i.gyazo.com/64941304c1cddf68f9971d128f80ecc1.png">
+
+<img src="https://i.gyazo.com/7f99f2bf232f367a0c72db920089dd12.png">
+
 # Despliegue de aplicación
 
 En este documento plasmaremos como hemos desplegado nuestra aplicación mediante el uso de Apache Tomcat en un sistema operativo Ubunto 22.04
