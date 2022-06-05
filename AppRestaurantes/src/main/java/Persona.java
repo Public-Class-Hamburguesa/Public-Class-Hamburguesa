@@ -1,5 +1,3 @@
-package PublicClassHamburgerPrueba;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -29,13 +27,15 @@ public class Persona {
 
 		public void setEdad(int edad) {
 			Scanner teclat = new Scanner(System.in);
-			boolean resultat=false;
+
+			/*boolean resultat=false;
 				if(edad >= 18) {
 					resultat=true;
 					this.edad = edad;
 				}else {
 					System.out.println("Eres menor de edad, no puedes pedir alcohol");
-				}
+
+				}*/
 			
 		}
 		
@@ -51,7 +51,7 @@ public class Persona {
 			listaPersonas.add(persona);
 		}
 		
-		public static void eliminarPersona(ArrayList<Persona> listaPersonas) {
+		/*public static void eliminarPersona(ArrayList<Persona> listaPersonas) {
 //			Scanner teclat = new Scanner(System.in);
 //			String nif = new String();
 //			System.out.println("Introduce el NIF de la persona que quieres eliminar: ");
@@ -64,9 +64,9 @@ public class Persona {
 				System.out.println("Persona no encontrada");
 			 }
 			
-		}
+		}*/
 		
-		public static int buscarPersonaId (ArrayList<Persona> listaPersonas) {
+		/*public static int buscarPersonaId (ArrayList<Persona> listaPersonas) {
 			Scanner teclat = new Scanner(System.in);
 			String id = new String();
 			System.out.println("Introduce el Id a buscar: ");
@@ -84,7 +84,7 @@ public class Persona {
 				i = i + 1;
 			}
 			return posicion;
-		}
+		}*/
 		
 		public void solicitarDatos() {
 			Scanner teclat = new Scanner(System.in);

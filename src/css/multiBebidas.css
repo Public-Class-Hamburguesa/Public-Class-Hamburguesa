@@ -127,7 +127,7 @@ main{
     top: 100px;
 }
 
-div#a{
+div#Cocacola{
     border: 2mm;
     border-style: solid;
     border-color: black;
@@ -139,7 +139,7 @@ div#a{
     width: 600px;
     height: 300px;
 }
-div#b{
+div#Fanta{
     border: 2mm;
     border-style: solid;
     border-color: black;
@@ -151,7 +151,7 @@ div#b{
     width: 600px;
     height: 300px;
 }
-div#c{
+div#Monster{
     border: 2mm;
     border-style: solid;
     border-color: black;
@@ -163,7 +163,7 @@ div#c{
     width: 600px;
     height: 300px;
 }
-div#d{
+div#estrellaG{
     border: 2mm;
     border-style: solid;
     border-color: black;

@@ -1,0 +1,49 @@
+html{
+    background-color: yellow;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff880c;
+    border-color: black;
+    border-style: solid;
+    border-width: 3mm;
+}
+header h1{
+    font-family: cursive;
+}
+img#logo{
+    width: 200px;
+    height: 200px;
+    left: 550px;
+}
+main{
+    background-color: gray;
+    display: flex;
+    flex: content;
+    justify-content: space-between;
+    position: relative;
+    width: 70%;
+    left: 15%;
+    top: 5cm;
+    border: 0.5cm;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 25%;
+}
+div.func{
+    color: white;
+    background-color: black;
+    border: 0.1cm;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25%;
+}
+footer{
+    background-color: green;
+}

@@ -8,18 +8,21 @@ html{
 
 /*MODIFICAMOS EL HEADER LOS H1 A NUESTRO GUSTO*/
 header{
-    text-align: center;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff880c;
+    border-color: black;
+    border-style: solid;
+    border-width: 3mm;
 }
-img#cabecera{
+header h1{
+    font-family: cursive;
+}
+img#logo{
+    width: 200px;
+    height: 200px;
     left: 550px;
-}
-h2{
-    color: white;
-    background-color: black;
-    width: 1000px;
-    position: relative;
-    left: 300px;
 }
 /*LOS ENLACES CON EL ID CAMBIA, SE MOSTRARÁN CON EL FONDO AZUL*/
 a.cambia {

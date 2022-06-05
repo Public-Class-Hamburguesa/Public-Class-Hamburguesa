@@ -1,25 +1,39 @@
 html{
-    background-color: yellow;
+    background-color: #ffbb40;
 }
 
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+}
 
 /*MODIFICAMOS EL HEADER LOS H1 A NUESTRO GUSTO*/
+
 header{
-    text-align: center;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff880c;
+    border-color: black;
+    border-style: solid;
+    border-width: 3mm;
 }
-img#cabecera{
+header h1{
+    font-family: cursive;
+}
+img#logo{
+    width: 200px;
+    height: 200px;
     left: 550px;
 }
-h2{
-    color: white;
-    background-color: black;
-    width: 1000px;
+nav#menu{
     position: relative;
-    left: 300px;
+    top: 10%;
+    left: 0px;
 }
 /*LOS ENLACES CON EL ID CAMBIA, SE MOSTRARÁN CON EL FONDO AZUL*/
 a.cambia {
@@ -36,9 +50,6 @@ nav#menu ul{
     list-style: none;
     margin: 0%;
     padding: 0%;
-    position: relative;
-    left: 400px;
-    z-index: 1;
 }
 /*AQUI NOS REFERIMOS A TODOS LOS ELEMENTOS LI DE LA UNORDERED LIST EN ESTE CASO QUIERO QUE SEAN CON FONDO NEGRO*/
 nav#menu ul li{
@@ -87,33 +98,61 @@ a.gray {
     transition: background-color 1s;
 }
 a.gray:hover {
-    background-color:gray;
+    background-color: #cf3401;
 }
 a.red {
     background-color: black;
     transition: background-color 1s;
 }
 a.red:hover {
-    background-color: red;
+    background-color: #ff880c;
 }
 a.blue {
     background-color: black;
     transition: background-color 1s;
 }
 a.blue:hover {
-    background-color: blue;
+    background-color: #f2854b;
 }
 a.gold {
     background-color: black;
     transition: background-color 1s;
 }
 a.gold:hover {
-    background-color: gold;
+    background-color: #526f12;
 }
 /*AQUI ACABA EL INDICE DESPLEGABLE*/
 
 div#registro{
-    position: absolute;
-    top: 50%;
+    background-color: gray;
+    border: 10px;
+    border-color: gray;
+    border-style: solid;
+    display: flex;
     flex-direction: column;
+    left: 40%;
+    top: 100px;
+    border-radius: 10%;
+    border-color: black;
+    padding: 1%;
+    width: fit-content;
+    position: relative;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    display: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 3%;
 }

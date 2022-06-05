@@ -4,15 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>INDEX</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <head>
-        <div>
-            <p>public class</p>
+    <header>
+        <img id="logo" src="./img/Logo.jpg" alt="Logo compañia">
+            <h1>PUBLIC CLASS HAMBUGUESA</h1>
+            <nav id="menu">
+                <ul>
+                    <!--MENU, ACORDARSE DE QUITAR EL "_TARGET" DE LA PÁGINA QUE ESTAMOS-->
+                    <!--IDENTIFICAMOS DISTINTAS CLASES DE ENLACE PARA PODER PONERLE UN COLOR A CADA UNA-->
+                    <li><a class="gray" href="index.html">INICIO</a></li>
+                    <li><a class="red" href="index.html" target="_blank">PRODUCTOS</a>
+                        <ul>
+                            <li><a class="red" href="./multiHamburguesa.html">COMIDA</a></li>
+                            <li><a class="red" href="./multiBebidas.html">BEBIDAS</a></li>
+                            <li><a class="red" href="./multiComplementos.html">COMPLEMENTOS</a></li>
+                            <li><a class="red" href="./multiSalsas.html">SALSAS</a></li>
+                            <li><a class="red" href="./multiPostres.html">POSTRE</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="blue" href="./index.html" target="blank">MENUS</a>
+                        <ul>
+                            <!--SUBMENU CON TRANSICION A AZUL-->
+                            <li><a class="blue" href="./deLaCasa.html">DE LA CASA</a></li>
+                            <li><a class="blue" href="./toniPepperoni.html">TONI PEPERONI</a></li>
+                            <li><a class="blue" href="./jorgeWrap.html">JORGE'S WRAP</a></li>
+                            <li><a class="blue" href="./danielOcean.html">DANIEL OCEAN</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="gold" href="" target="_blank">ACCEDER</a>
+                        <!--SUBMENU PARA REGISTRARSE O ACCEDER-->
+                        <ul>
+                            <li><a class="gold" href="./registro.html" target="_blank">REGISTRO</a></li>
+                            <li><a class="gold" href="./login.html" target="_blank">LOGIN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+   <main>
+        <h2>¿Que te apetece pedir hoy?</h2>
+        <div class="sugerencia">
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="./deLaCasa.html"><img src="./img/hamburguesas/deLaCasa.jpg" alt=""></a>
+                </div>
+                <a href="#carousel__slide4"
+                     class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                     class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="./danielOcean.html"><img src="./img/hamburguesas/gambas.jpg" alt=""></a>
+                </div>
+                <a href="#carousel__slide1"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="./toniPepperoni.html"><img src="./img/hamburguesas/pepperoni.jpg" alt=""></a>
+                </div>
+                <a href="#carousel__slide2"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide4"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                    <a href="./jorgeWrap.html"><img src="./img/hamburguesas/wrap.jpg" alt=""></a>
+                </div>
+                <a href="#carousel__slide3"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1"
+                   class="carousel__next">Go to first slide</a>
+              </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2"
+                     class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3"
+                     class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide4"
+                     class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+              </ol>
+            </aside>
+          </section>
         </div>
-    </head>
-    <div></div>
-    <footer></footer>
+    </main>
+    <div class="space"></div>
+    <footer>
+        <p id="tlf">Tambien puedes pedir por telefono en : 655555554</p>
+        <p id="derechos">Public & Class Hamburguesa corporation. Derechos creative commons.</p>
+        <p id="rs">FACEBOOK | INSTAGRAM | YOUTUBE | TWITTER</p>
+    </footer>
 </body>
 </html>
