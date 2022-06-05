@@ -99,13 +99,13 @@ DELIMITER ;
 CALL GetAllProducts();
 
 INSERT INTO producto (nombre, precio, stock, popularidad)
-VALUES ("Toni Pepperoni", 13, 100, 0);
+VALUES ("Toni Pepperoni", 12, 100, 0);
 
 INSERT INTO producto (nombre, precio, stock, popularidad)
-VALUES ("Jorge's Wrap", 11.5, 100, 0);
+VALUES ("Jorge's Wrap", 12, 100, 0);
 
 INSERT INTO producto (nombre, precio, stock, popularidad)
-VALUES ("Daniel Ocean", 14.5, 100, 0);
+VALUES ("Daniel Ocean", 12, 100, 0);
 
 INSERT INTO producto (nombre, precio, stock, popularidad)
 VALUES ("De la casa", 10, 100, 0);
