@@ -27,12 +27,14 @@ public class Persona {
 
 		public void setEdad(int edad) {
 			Scanner teclat = new Scanner(System.in);
+
 			/*boolean resultat=false;
 				if(edad >= 18) {
 					resultat=true;
 					this.edad = edad;
 				}else {
 					System.out.println("Eres menor de edad, no puedes pedir alcohol");
+
 				}*/
 			
 		}

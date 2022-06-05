@@ -1,3 +1,5 @@
+package PublicClassHamburgerPrueba;
+
 public class Producto {
 	private String id;
 	private String nombre;
@@ -39,5 +41,4 @@ public class Producto {
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
-	
 }
