@@ -98,13 +98,62 @@ DELIMITER ;
 
 CALL GetAllProducts();
 
-
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Toni Pepperoni", 12, 100, 0);
 
 INSERT INTO producto (nombre, precio, stock, popularidad)
-VALUES ("Toni Pepperoni", 13, 100, 0);
+VALUES ("Jorge's Wrap", 12, 100, 0);
 
 INSERT INTO producto (nombre, precio, stock, popularidad)
-VALUES ("Jorge's Wrap", 11.5, 100, 0);
+VALUES ("Daniel Ocean", 12, 100, 0);
 
 INSERT INTO producto (nombre, precio, stock, popularidad)
-VALUES ("Daniel Ocean", 14.5, 100, 0);
+VALUES ("De la casa", 10, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Coca-Cola", 1.5, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Fanta", 1.5, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Monster", 2, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Cerveza", 2, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Patatas fritas", 2, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Aros de cebolla", 1.5, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Alitas de pollo", 3, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Gouda rings", 2.5, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Salsa barbacoa", 0.5, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Salsa queso", 0.5, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Salsa miel-mostaza", 0.5, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Salsa mayonesa", 0.5, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Helado", 3, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Gofre", 4, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Tarta", 4, 100, 0);
+
+INSERT INTO producto (nombre, precio, stock, popularidad)
+VALUES ("Frappé", 2, 100, 0);
