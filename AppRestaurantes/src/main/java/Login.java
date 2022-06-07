@@ -16,9 +16,16 @@ public class Login extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		//Comprobar que esta en la base de datos, sino no puede hacer login ERROR y sugerir registrarse comprar si está el listado de cliente de baja
+	String resultado = "";
+		try {
+			resultado = Cliente.selectUsuario(request.getParameter("usuario"));
+			
+		} catch (Exception e) {
+			System.out.println("Error al descargar datos");
+		}
+		response.addHeader("Access-Control-Allow-Origin", "*");
+		response.getWriter().append(resultado);
+		//Comprobar que esta en la base de datos, sino no puede hacer login ERROR y sugerir registrarse comprobar si está en el listado de cliente de baja
 		// Si Login correcto, mostrar datos usuario (nombre usuario)
 	}
 
