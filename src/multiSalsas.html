@@ -43,32 +43,56 @@
                     </li>
                 </ul>
             </nav>
-            <a href="./carrito.html"><img src="./img/carrito.png" alt="CARRITO DE LA COMPRA" height="100px" width="100px"></a>
+            <div class="" id="navbarCollapse">
+                <ul class="">
+                    <li class="">
+                        <img src="./img/carrito.png" class="" height="70px"
+                            width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></img>
+                        <div id="carrito" class="" >
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="">Vaciar Carrito</a>
+                            <a href="#" id="procesar-pedido" class="">Procesar
+                                Compra</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
     </header>
-    <main>
+    <main id="lista-productos">
         <div id="a">
             <img src="./img/salsas/barbacoa.JPG" alt="Imagen de una salsa" width="150px" height="100px">
             <h3>BARBACOA</h3>
-            <p>Salsa sabor barbacoa. Precio: 0.5€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Salsa sabor barbacoa. Precio: <span>0.5</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="17">AÑADIR</button>
         </div>
         <div id="b">
             <img src="./img/salsas/queso.JPG" alt="Imagen de una salsa" width="150px" height="100px">
             <h3>QUESO</h3>
-            <p>Salsa sabor queso. Precio: 0.5€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Salsa sabor queso. Precio: <span>0.5</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="18">AÑADIR</button>
         </div>
         <div id="c">
             <img src="./img/salsas/mielMostaza.JPG" alt="Imagen de una salsa" width="150px" height="100px">
             <h3>MIEL Y MOSTAZA</h3>
-            <p>Salsa sabor miel y mostaza. Precio: 0.5€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Salsa sabor miel y mostaza. Precio: <span>0.5</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="19">AÑADIR</button>
         </div>
         <div id="d">
             <img src="./img/salsas/mayonesa.JPG" alt="Imagen de una salsa" width="150px" height="100px">
             <h3>MAYONESA</h3>
-            <p>Salsa sabor mayonesa. Precio: 0.5€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Salsa sabor mayonesa. Precio: <span>0.5</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="20">AÑADIR</button>
         </div>
     </main>
     <footer>
@@ -76,5 +100,8 @@
         <p id="derechos">Public & Class Hamburguesa corporation. Derechos creative commons.</p>
         <p id="rs">FACEBOOK | INSTAGRAM | YOUTUBE | TWITTER</p>
     </footer>
+
+    <script src="./js/carrito.js"></script>
+    <script src="./js/pedido.js"></script>
 </body>
 </html>
