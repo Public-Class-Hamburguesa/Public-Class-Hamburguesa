@@ -42,6 +42,24 @@ public class Cliente extends Persona{
 		}
 		
 	}
+	
+	public static String selectUsuario(String usuario) throws SQLException, ClassNotFoundException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		String url = "jdbc:mysql://localhost:3306/daw";
+		Connection con = DriverManager.getConnection(url, "root", "Namiki1223"); //(url, usuario, contraseña)
+		Statement st = con.createStatement();
+		
+		String query = "SELECT usuario, contraseña FROM paisos WHERE usuario='"+usuario+"'"; // ?
+		ResultSet rs = st.executeQuery(query);
+		
+		String resultat = "<p>Usuario</p>";
+		
+		while (rs.next()) {
+			resultat = resultat 
+						+"<p>"+rs.getString("usuario")+"</p>";
+		}
+		return resultat;
+	}
 
 	//Getters y Setters
 	public String getUsuario() {
