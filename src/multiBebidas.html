@@ -43,33 +43,57 @@
                     </li>
                 </ul>
             </nav>
-            <a href="./carrito.html"><img src="./img/carrito.png" alt="CARRITO DE LA COMPRA" height="100px" width="100px"></a>
+            <div class="" id="navbarCollapse">
+                <ul class="">
+                    <li class="">
+                        <img src="./img/carrito.png" class="" height="70px"
+                            width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></img>
+                        <div id="carrito" class="" >
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="">Vaciar Carrito</a>
+                            <a href="#" id="procesar-pedido" class="">Procesar
+                                Compra</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
     </header>
-    <main>
+    <main id="lista-productos">
         <div id="a">
             <img src="./img/bebidas/cocacola.jpg" alt="Imagen de una Coca-cola" width="150px" height="100px">
             <h3>COCACOLA</h3>
-            <p>Bebida azucarada gaseosa vendida a nivel mundial. Precio: 1.5€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Bebida azucarada gaseosa vendida a nivel mundial. Precio: <span>1.5</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="5">AÑADIR</button>
         </div>
         <div id="b">
             <img src="./img/bebidas/fanta.jpg" alt="Imagen de una fanta" width="150px" height="100px">
             <h3>FANTA</h3>
-            <p>Bebida azucarada con sabor a naranja. Precio: 1.5€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Bebida azucarada con sabor a naranja. Precio: <span>1.5</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="6">AÑADIR</button>
         </div>
         <div id="c">
             <img src="./img/bebidas/monster.jpg" alt="Imagen de un monster mango loco" width="150px" height="100px">
             <h3>MONSTER MANGO LOCO</h3>
-            <p>Bebida azucarada gaseosa, estimulante, con sabor a mango. Precio: 2€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Bebida azucarada gaseosa, estimulante, con sabor a mango. Precio: <span>2</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="7">AÑADIR</button>
         </div>
         <div id="d">
             <img src="./img/bebidas/estrellagalicia.jpg" alt="imagen de una estrella galicia" width="150px" height="100px">
             <h3>ESTRELLA GALICIA</h3>
             <p>Cerveza de color dorado brillante que parte de una selección de maltas y lúpulo especialmente amargos. Ello hace 
-                que esta cerveza tenga un agradable y característico sabor lupulado.. Precio: 2€</p>
-            <button type="button" onclick="">AÑADIR</button>
+                que esta cerveza tenga un agradable y característico sabor lupulado.. Precio: <span>2</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="8">AÑADIR</button>
         </div>
     </main>
     <footer>
@@ -77,5 +101,8 @@
         <p id="derechos">Public & Class Hamburguesa corporation. Derechos creative commons.</p>
         <p id="rs">FACEBOOK | INSTAGRAM | YOUTUBE | TWITTER</p>
     </footer>
+
+    <script src="./js/carrito.js"></script>
+    <script src="./js/pedido.js"></script>
 </body>
 </html>
