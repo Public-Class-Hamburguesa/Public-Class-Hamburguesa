@@ -57,8 +57,6 @@ CREATE TABLE lineaComanda(
     FOREIGN KEY(idProducto) REFERENCES producto(id)
 );
 
-/*Hi ha d’haver-hi un trigger per a insercions, un per a modificacions i un per a eliminacions amb una funcionalitat definida dins l’aplicació. 
-Ha de comptar amb al manco un procediment emmagatzemat què s’empri a l’aplicació.*/
 DELIMITER //
 CREATE TRIGGER reducirStock BEFORE INSERT ON lineaComanda
        FOR EACH ROW
