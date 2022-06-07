@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARRITO</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
@@ -45,21 +46,117 @@
                 </li>
             </ul>
         </nav>
-        <a href="./carrito.html"><img src="./img/carrito.png" alt="CARRITO DE LA COMPRA" height="100px" width="100px"></a>
-    </header>
-    <main>
-        <div id="carrito">
-            <!--PONER EL CARRITO-->
+        <div class="" id="navbarCollapse">
+            <ul class="">
+                <li class="">
+                    <img src="./img/carrito.png" class="" height="70px"
+                        width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"></img>
+                    <div id="carrito" class="" >
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="">Procesar
+                            Compra</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <form action="" onsubmit="">
-            <button id="fin" type="submit">PAGAR</button>
-        </form>
+    </header>
+
+    <main>
+        <div class="">
+            <div class="">
+                <div class="">
+                    <h2 class="">Realizar Compra</h2>
+                    <form id="procesar-pago" action="#" method="post">
+                        <div class="">
+                            <label for="cliente" class="">Cliente :</label>
+                            <div class="">
+                                <input type="text" class="" id="cliente"
+                                    placeholder="Ingresa nombre cliente" name="destinatario">
+                            </div>
+                        </div>
+                        <div class="">
+                            <label for="email" class="">Correo :</label>
+                            <div class="">
+                                <input type="text" class="" id="correo" placeholder="Ingresa tu correo" name="cc_to">
+                            </div>
+                        </div>
+
+                        <div id="carrito" class="" >
+                            <table class="" id="lista-compra" >
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Sub Total</th>
+                                        <th>Eliminar</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody >
+
+                                </tbody>
+                                <tr>
+                                    <th>SUB TOTAL :</th>
+                                    <th>
+                                        <p id="subtotal"></p>
+                                    </th>
+                                    <!-- <th></th> -->
+                                </tr>
+                                <tr>
+                                    <th>IVA :</th>
+                                    <th>
+                                        <p id="iva"></p>
+                                    </th>
+                                    <!-- <th></th> -->
+                                </tr>
+                                <tr>
+                                    <th>TOTAL :</th>
+                                    <th>
+                                        <input id="total" name="monto" class="" readonly style="background-color: white;"></input>
+                                    </th>
+                                    <!-- <th></th> -->
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="">
+                            <!-- <div class="">
+                                <a href="index.html" class="" target="_blank">Seguir comprando</a>
+                            </div> -->
+                            <div class="">
+                                <button href="#" class="" id="procesar-compra">PAGAR</button>
+                                <button type="button" onclick="">Seguir Comprando</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
         <p id="tlf">Tambien puedes pedir por telefono en : 655555554</p>
         <p id="derechos">Public & Class Hamburguesa corporation. Derechos creative commons.</p>
         <p id="rs">FACEBOOK | INSTAGRAM | YOUTUBE | TWITTER</p>
     </footer>
+
+    <script src="./js/carrito.js"></script>
+    <script src="./js/compra.js"></script>
 </body>
 
 </html>
