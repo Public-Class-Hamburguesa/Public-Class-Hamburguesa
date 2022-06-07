@@ -49,7 +49,7 @@ public class Cliente extends Persona{
 		Connection con = DriverManager.getConnection(url, "root", "Namiki1223"); //(url, usuario, contraseña)
 		Statement st = con.createStatement();
 		
-		String query = "SELECT usuario, contraseña FROM paisos WHERE usuario='"+usuario+"'"; // ?
+		String query = "SELECT usuario, contraseña FROM cliente WHERE usuario='"+usuario+"'"; // ?
 		ResultSet rs = st.executeQuery(query);
 		
 		String resultat = "<p>Usuario</p>";
