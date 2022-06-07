@@ -22,19 +22,25 @@ Hemos diseñado una aplicación web cuyo fin es satisfacer la necesidad del loca
 + Los pedidos solo deberán poder ser realizados en horario laboral.
 + La implementación debe realizarse desde un dispositivo con conexión a internet o desde los paneles disponibles en el establecimiento.
 
-### Modelo entidad relación de la BDD
+## Modelo entidad relación de la BDD
+
+Un modelo entidad-relación es una herramienta para el modeladoEs el proceso que permite describir el tipo y las relaciones entre los datos. de datos que permite representar las entidades relevantes de una base de datos así como sus interrelaciones y propiedades.
 
 <img src="https://i.gyazo.com/778ffe20b613c9a244172477e70bba2c.png">
 
-### Diagrama de diseño general
+## Diagrama de diseño general
 
 <img src="https://i.gyazo.com/72611f4dc9e700211266f11ac5925d2b.png">
 
-### Diagrama de actividades y flujo
+## Diagrama de actividades y flujo
 
-Diagrama de actividades y diagrama de flujo en los que se refleja el comportamiento de la aplicación a la hora de iniciar un pedido de un cliente
+**Diagrama de actividades y diagrama de flujo en los que se refleja el comportamiento de la aplicación a la hora de iniciar un pedido de un cliente**
+
+Un diagrama de actividades es un diagrama de comportamiento que ilustra el flujo de actividades a través de un sistema. Los diagramas de actividad UML también pueden utilizarse para representar un flujo de eventos en un proceso comercial. Pueden utilizarse para examinar los procesos comerciales a fin de identificar su flujo y sus necesidades.
 
 <img src="https://i.gyazo.com/64941304c1cddf68f9971d128f80ecc1.png">
+
+Un Diagrama de Flujo representa la esquematización gráfica de un algoritmo, el cual muestra gráficamente los pasos o procesos a seguir para alcanzar la solución de un problema. Su correcta construcción es sumamente importante porque, a partir del mismo se escribe un programa en algún Lenguaje de Programación.
 
 <img src="https://i.gyazo.com/7f99f2bf232f367a0c72db920089dd12.png">
 
@@ -125,3 +131,27 @@ Podemos comprobar que en el puerto 8080 se encuentra Tomcat
 Y si introducimos la ruta de nuestro proyecto y su respectivo index.html, la aplicación estará completamente desplegada.
 
 <img src="https://cdn.discordapp.com/attachments/897890284074041354/982808270177697802/unknown.png">
+
+# Diseño Web de la aplicación
+
+Una aplicación web, para poder ser utilizado por el usuario, requiere de su debido front-end, es decir, el conjunto de archivos html, css y javascript que servirán para plasmar de forma gráfica y vistosa el/los servicio/s relizado por el back-end.
+
+<img src="https://i.gyazo.com/6130186c2b3d197527da4bbd4757a1e7.png">
+
+## Inicio
+
+Para este proyecto hemos optado por un header con una barra de navegación minimalistas con una paleta de colore cálida y apetitosa.
+
+<img src="https://i.gyazo.com/3ac7877bbe4b566d3289d3d35968041d.png">
+
+La barra de navegación, además, dispone de enlaces desplegables que la ayudan a mantenerse más compacta y simple.
+
+<img src="https://i.gyazo.com/ccd74bbc486e98f3f91bc08626cdb6eb.png">
+
+## Login
+
+Hemos introducido un sistema anti-robots en el login mediante JavaScript para que no haya bots tratando de acceder a cuentas de usuarios registrados
+
+<img src="https://i.gyazo.com/8e06298d7d79f911198bacc681aa0339.png">
+
+La página dispone de distintas imagenes y descripciones de los productos.
