@@ -43,32 +43,56 @@
                     </li>
                 </ul>
             </nav>
-            <a href="./carrito.html"><img src="./img/carrito.png" alt="CARRITO DE LA COMPRA" height="100px" width="100px"></a>
+            <div class="" id="navbarCollapse">
+                <ul class="">
+                    <li class="">
+                        <img src="./img/carrito.png" class="" height="70px"
+                            width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"></img>
+                        <div id="carrito" class="" >
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="">Vaciar Carrito</a>
+                            <a href="#" id="procesar-pedido" class="">Procesar
+                                Compra</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
     </header>
-    <main>
+    <main id="lista-productos">
         <div id="a">
             <img src="./img/complementos/patatasSupreme.jpg" alt="Imagen de unas patatas fritas" width="150px" height="100px">
             <h3>PATATAS SUPREME</h3>
-            <p>Patatas fritas cortadas al estilo gajo, aderezadas con nuestra salsa especial. Precio: 2€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Patatas fritas cortadas al estilo gajo, aderezadas con nuestra salsa especial. Precio: <span>2</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="9">AÑADIR</button>
         </div>
         <div id="b">
             <img src="./img/complementos/arosDeCebolla.jpg" alt="Imagen de una hamburguesa" width="150px" height="100px">
             <h3>AROS DE CEBOLLA</h3>
-            <p>Son perfectos para todo, son redondos, están sabrosos, crujientes y dorados, solos o acompañados de una de tus salsas favoritas. Precio: 1.5€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Son perfectos para todo, son redondos, están sabrosos, crujientes y dorados, solos o acompañados de una de tus salsas favoritas. Precio: <span>1.5</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="10">AÑADIR</button>
         </div>
         <div id="c">
             <img src="./img/complementos/pollo.JPG" alt="Imagen de una hamburguesa" width="150px" height="100px">
             <h3>ALITAS DE POLLO</h3>
-            <p>Grandes y sabrosas, perfectas para los hambrientos amantes del buen pollo. Si van a darte alas, que sean de éstas. Precio: 3€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Grandes y sabrosas, perfectas para los hambrientos amantes del buen pollo. Si van a darte alas, que sean de éstas. Precio: <span>3</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="11">AÑADIR</button>
         </div>
         <div id="d">
             <img src="./img/complementos/goudaRings.JPG" alt="Imagen de una hamburguesa" width="150px" height="100px">
             <h3>GOUDA RINGS</h3>
-            <p>Disfruta de estos deliciosos aros, crujientes por fuera, rellenos de queso gouda fundido. Precio: 2.5€</p>
-            <button type="button" onclick="">AÑADIR</button>
+            <p>Disfruta de estos deliciosos aros, crujientes por fuera, rellenos de queso gouda fundido. Precio: <span>2.5</span>€</p>
+            <button type="button" onclick="" class="agregar-carrito" data-id="12">AÑADIR</button>
         </div>
     </main>
     <footer>
@@ -76,5 +100,8 @@
         <p id="derechos">Public & Class Hamburguesa corporation. Derechos creative commons.</p>
         <p id="rs">FACEBOOK | INSTAGRAM | YOUTUBE | TWITTER</p>
     </footer>
+
+    <script src="./js/carrito.js"></script>
+    <script src="./js/pedido.js"></script>
 </body>
 </html>
