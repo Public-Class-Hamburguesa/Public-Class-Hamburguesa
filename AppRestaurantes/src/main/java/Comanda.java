@@ -12,7 +12,9 @@ public class Comanda {
 	}
 	
 	public Comanda(String id, float precio, ArrayList<LineaComanda> lineasComanda) {
-		
+		this.setId(id);
+		this.setPrecio(precio);
+		this.setLineasComanda(lineasComanda);
 	}
 
 	public String getId() {
