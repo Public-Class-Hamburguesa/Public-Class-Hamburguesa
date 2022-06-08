@@ -1,5 +1,7 @@
 # Public Class Hamburguesa
 
+## Video del proyecto 2 : [Proyecto 2-TimeInn Video](https://drive.google.com/file/d/1ioFLt9j6JfLDsbtAN8_JBZZFuR_H4-D4/view?usp=sharing)
+
 Hemos diseñado una aplicación web cuyo fin es satisfacer la necesidad del local de comida rápida Public Hamburguesa, ofreciendo simpleza y eficiencia a sus clientes a la hora de realizar pedidos.
 
 ### Requisitos funcionales
