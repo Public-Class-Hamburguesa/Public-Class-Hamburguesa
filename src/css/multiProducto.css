@@ -125,7 +125,11 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        top: 100px;
+        top: 150px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        z-index: -1;
     }
     
     div#a{
