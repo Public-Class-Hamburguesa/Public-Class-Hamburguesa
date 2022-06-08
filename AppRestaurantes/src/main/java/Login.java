@@ -22,11 +22,11 @@ public class Login extends HttpServlet {
 			
 		} catch (Exception e) {
 			System.out.println("Error al descargar datos");
+			System.out.println(e.getMessage());
 		}
 		response.addHeader("Access-Control-Allow-Origin", "*");
 		response.getWriter().append(resultado);
-		//Comprobar que esta en la base de datos, sino no puede hacer login ERROR y sugerir registrarse comprobar si está en el listado de cliente de baja
-		// Si Login correcto, mostrar datos usuario (nombre usuario)
+		System.out.println("Voy a enviar esto: "+resultado);
 	}
 
 	/**
