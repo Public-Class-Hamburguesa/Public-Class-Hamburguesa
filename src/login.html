@@ -71,21 +71,23 @@
                 </li>
             </ul>
         </div>
+    
+        <div id="loginUsuario"></div>
     </header>
 
     <div id="login">
-        <form action="" onsubmit="">
+        <form>
             <label for="usuario"><b> Usuario: </b></label>
             <br>
-            <input type="text" name="usuario">
+            <input type="text" name="usuario" id="usuario">
             <br>
             <label for="contraseña"><b> Contraseña:</b></label>
             <br>
             <input type="password" name="contraseña" id="contraseña">
             <br>
-            <input type="submit" value="Enviar" onclick="">
             <input type="reset" value="Reset">
         </form>
+            <button value="Enviar" onclick="buscarUsuario()">Enviar</button>
     </div>
     
     <button onclick="tonalidad()">Pulse aquí si desea tener tonalidades más suaves</button>
