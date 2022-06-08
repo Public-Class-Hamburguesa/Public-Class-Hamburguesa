@@ -29,13 +29,13 @@ public class Registrar extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Servlet");
-		Cliente cliente = new Cliente(Integer.valueOf(request.getParameter("edad")), request.getParameter("email"), request.getParameter("usuario"), request.getParameter("contrasenya"));
+		Cliente cliente = new Cliente(Integer.valueOf(request.getParameter("edad")), request.getParameter("usuario"), request.getParameter("contrasenya"), request.getParameter("email"));
 		response.addHeader("Access-Control-Allow-Origin", "*");
 		if(cliente.registrarCliente()) {
 			response.getWriter().append("Usuari Resgistrat correctament");
 			System.out.println("Servlet good");
 		}else {
-			response.getWriter().append("Error: Usuari no resgistrat");
+			response.getWriter().append("Error: Usuari no resgistrat, nom de usuari ja existeix");
 			System.out.println("Servlet bad");
 		}
 	}
